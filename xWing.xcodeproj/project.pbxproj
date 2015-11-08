@@ -13,6 +13,7 @@
 		A53E566A1BEEEFC100EE06FA /* xWing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A53E56681BEEEFC100EE06FA /* xWing.xcdatamodeld */; };
 		A53E566C1BEEEFC100EE06FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53E566B1BEEEFC100EE06FA /* Assets.xcassets */; };
 		A53E566F1BEEEFC100EE06FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53E566D1BEEEFC100EE06FA /* LaunchScreen.storyboard */; };
+		A53E56771BEEF0CF00EE06FA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53E56761BEEF0CF00EE06FA /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A53E566B1BEEEFC100EE06FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A53E566E1BEEEFC100EE06FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A53E56701BEEEFC100EE06FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A53E56761BEEF0CF00EE06FA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53E56771BEEF0CF00EE06FA /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 		A53E56551BEEEFC100EE06FA = {
 			isa = PBXGroup;
 			children = (
+				A53E56761BEEF0CF00EE06FA /* iAd.framework */,
 				A53E56601BEEEFC100EE06FA /* xWing */,
 				A53E565F1BEEEFC100EE06FA /* Products */,
 			);
