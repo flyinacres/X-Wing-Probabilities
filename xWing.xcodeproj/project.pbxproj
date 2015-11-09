@@ -14,6 +14,7 @@
 		A53E566C1BEEEFC100EE06FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53E566B1BEEEFC100EE06FA /* Assets.xcassets */; };
 		A53E566F1BEEEFC100EE06FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53E566D1BEEEFC100EE06FA /* LaunchScreen.storyboard */; };
 		A53E56771BEEF0CF00EE06FA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53E56761BEEF0CF00EE06FA /* iAd.framework */; };
+		A53E56791BF0681B00EE06FA /* PatternedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E56781BF0681B00EE06FA /* PatternedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A53E566E1BEEEFC100EE06FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A53E56701BEEEFC100EE06FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A53E56761BEEF0CF00EE06FA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		A53E56781BF0681B00EE06FA /* PatternedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A53E56611BEEEFC100EE06FA /* AppDelegate.swift */,
 				A53E56631BEEEFC100EE06FA /* ViewController.swift */,
 				A53E56651BEEEFC100EE06FA /* Main.storyboard */,
+				A53E56781BF0681B00EE06FA /* PatternedView.swift */,
 				A53E566B1BEEEFC100EE06FA /* Assets.xcassets */,
 				A53E566D1BEEEFC100EE06FA /* LaunchScreen.storyboard */,
 				A53E56701BEEEFC100EE06FA /* Info.plist */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53E56791BF0681B00EE06FA /* PatternedView.swift in Sources */,
 				A53E56641BEEEFC100EE06FA /* ViewController.swift in Sources */,
 				A53E566A1BEEEFC100EE06FA /* xWing.xcdatamodeld in Sources */,
 				A53E56621BEEEFC100EE06FA /* AppDelegate.swift in Sources */,
