@@ -115,28 +115,36 @@ class ViewController: UIViewController, UITableViewDelegate {
     
     // Make sure that all of the variables/display reflect the row that will be selected
     func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        var articleParams = ["type": "attack", "dice": "\(indexPath.section)", "focus": "false"]
         
         if tableView == attackTable {
-            selectedAttackDice = indexPath.section
+           selectedAttackDice = indexPath.section
             attackOdds = 0.5
             if indexPath.row == 1 || indexPath.row == 3 {
                 attackOdds = 0.75
+                articleParams["focus"] = "true"
             }
             if indexPath.row == 2 || indexPath.row == 3 {
                 // This adds in the probability for a reroll
                 attackOdds += (1 - attackOdds) * attackOdds
+                articleParams["lock"] = "true"
             }
         } else {
+            articleParams["type"] = "defense"
             defenseOdds = 0.375
             if indexPath.row == 1 || indexPath.row == 3 {
                 defenseOdds = 0.625
+                articleParams["focus"] = "true"
             }
             evadeTokens = 0.0
             if indexPath.row == 2 || indexPath.row == 3 {
                 evadeTokens = 1.0
+                articleParams["evade"] = "true"
             }
             selectedDefenseDice = indexPath.section
         }
+        
+        Flurry.logEvent("User Selection", withParameters: articleParams);
         
         let percent = calcOdds(Double(selectedAttackDice+1), totalDefenseDice: Double(selectedDefenseDice))
         let percentString = NSString(format: "%.2f", percent * 100.0)
